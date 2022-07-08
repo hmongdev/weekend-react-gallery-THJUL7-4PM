@@ -13,11 +13,15 @@ function GalleryItem() {
     return (
         <>
             <div>
-                <img src="images/goat_small.jpg" />
+                <img src="images/goat_small.jpg" width="100px" height="100px" />
             </div>
             <div>
                 <button onClick={addLike}>Like</button>
-                <p>{likes} people love this!</p>
+                <div>
+                    {likes !== 0
+                        ? `${likes} people love this!`
+                        : `Nobody likes this :(`}
+                </div>
             </div>
         </>
     );

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import './App.css';
 
-//import component
+//import
 import GalleryList from '../GalleryList/GalleryList';
 import axios from 'axios';
+import galleryItems from '../../modules/gallery.data.js';
 
 function App() {
     //states
@@ -35,7 +36,7 @@ function App() {
                 <h1 className="App-title">Gallery of My Life</h1>
             </header>
             <p>Gallery goes here</p>
-            <GalleryList galleryList={galleryList} />
+            <GalleryList items={galleryItems} getGalleryList={getGalleryList} />
         </div>
     );
 }
