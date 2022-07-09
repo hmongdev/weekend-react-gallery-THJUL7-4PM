@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import axios from 'axios';
 import './GalleryItem.css';
 
@@ -17,10 +17,14 @@ function GalleryItem({ item, getGalleryList }) {
             });
     };
 
+    const showDescription = () => {
+        console.log(item.description);
+    };
+
     return (
         <>
             <div className="item">
-                <img src={item.path} />
+                <img src={item.path} onClick={showDescription} />
                 <div className="item-text">
                     {item.likes !== 0
                         ? `${item.likes} people love this!`

@@ -30,7 +30,7 @@ function App() {
     return (
         <div className="App">
             <header className="App-header">
-                <h1 className="App-title">Neighbor-ly</h1>
+                <h1 className="App-title">Gallery of my Life</h1>
             </header>
             <GalleryList items={galleryList} getGalleryList={getGalleryList} />
         </div>
