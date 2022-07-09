@@ -21,14 +21,14 @@ function GalleryItem({ item, getGalleryList }) {
         <>
             <div className="item">
                 <img src={item.path} />
-                <section>
-                    <button onClick={addLike}>Like</button>
-                </section>
-                <section>
+                <div className="item-text">
                     {item.likes !== 0
                         ? `${item.likes} people love this!`
                         : `Nobody likes this :(`}
-                </section>
+                </div>
+                <div className="item-button">
+                    <button onClick={addLike}>👍 Like</button>
+                </div>
             </div>
         </>
     );

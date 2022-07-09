@@ -1,24 +1,45 @@
-div.item {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin: 50px;
-    width: fit-content;
+:root {
+    --button-hover-bg: #f2f2f2;
+    --text: #5f6266;
 }
 
-div {
-    display: flex;
-    flex-direction: row;
+html {
+    font-size: 62.5%;
+}
+
+div.item {
+    display: inline-block;
+    margin: 50px;
+}
+
+div.item-text,
+div.item,
+button {
+    margin: 1rem;
+    font-size: x-large;
 }
 
 div section {
-    margin: 10px;
+    margin: 1rem;
 }
 
 img {
     margin: auto;
-    width: 100px;
-    height: 100px;
-    border-radius: 5%;
-    border: 3px outset #0c90f2;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 15%;
+}
+
+button {
+    color: var(--text);
+    background-color: white;
+    border: none;
+    border-radius: 0.5rem;
+    width: 20rem;
+    height: 5rem;
+}
+
+button:hover {
+    background-color: var(--button-hover-bg);
+    transition: ease-in-out 0.3s;
 }
