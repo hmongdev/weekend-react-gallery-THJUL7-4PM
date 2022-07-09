@@ -25,6 +25,7 @@ function GalleryItem({ item, getGalleryList }) {
         <>
             <div className="item">
                 <img src={item.path} onClick={showDescription} />
+
                 <div className="item-text">
                     {item.likes !== 0
                         ? `${item.likes} people love this!`
