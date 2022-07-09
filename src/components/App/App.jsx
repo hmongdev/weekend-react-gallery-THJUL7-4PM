@@ -4,7 +4,6 @@ import './App.css';
 //import
 import GalleryList from '../GalleryList/GalleryList';
 import axios from 'axios';
-import galleryItems from '../../modules/gallery.data.js';
 
 function App() {
     //states
@@ -28,15 +27,12 @@ function App() {
             });
     };
 
-    //PUT
-
     return (
         <div className="App">
             <header className="App-header">
                 <h1 className="App-title">Gallery of My Life</h1>
             </header>
-            <p>Gallery goes here</p>
-            <GalleryList items={galleryItems} getGalleryList={getGalleryList} />
+            <GalleryList items={galleryList} getGalleryList={getGalleryList} />
         </div>
     );
 }
