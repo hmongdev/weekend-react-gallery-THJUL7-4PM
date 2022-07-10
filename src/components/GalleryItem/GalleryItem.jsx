@@ -1,8 +1,11 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './GalleryItem.css';
 
 function GalleryItem({ item, getGalleryList }) {
+    //1. states
+    const [description, setDescription] = useState(true);
+
     //PUT
     const addLike = () => {
         axios
@@ -18,14 +21,20 @@ function GalleryItem({ item, getGalleryList }) {
     };
 
     const showDescription = () => {
-        console.log(item.description);
+        //2. hidden state
+        setDescription(!description); // => false
     };
 
     return (
         <>
             <div className="item">
-                <img src={item.path} onClick={showDescription} />
-
+                <div className="item-image" onClick={showDescription}>
+                    {description ? (
+                        <img src={item.path} />
+                    ) : (
+                        <p>{item.description}</p>
+                    )}
+                </div>
                 <div className="item-text">
                     {item.likes !== 0
                         ? `${item.likes} people love this!`
