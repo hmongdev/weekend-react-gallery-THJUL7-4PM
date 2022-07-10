@@ -8,6 +8,9 @@ This weekend challenge allows you to like an image, click on the image to show i
 
 I initially approached this assignment incorrectly by moving the data.js file into the src folder since I wanted to import it.
 
+The main obstacle was figuring out how to pass props through components, then manipulating the data within the component to do whatever you wanted.
+
+I asked for help from Stephon Maria Isabel, and Miley to help me complete the assignment.
 
 ## Installation
 
