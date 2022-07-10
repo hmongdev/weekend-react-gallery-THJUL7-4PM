@@ -16,7 +16,7 @@ function GalleryItem({ item, getGalleryList }) {
                 getGalleryList();
             })
             .catch((error) => {
-                alert('GET ERR in App.jsx', error);
+                alert('GET ERR in GalleryItem.jsx', error);
             });
     };
 
