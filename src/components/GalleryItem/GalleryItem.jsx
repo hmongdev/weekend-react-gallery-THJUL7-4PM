@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import axios from 'axios';
 import './GalleryItem.css';
 
 function GalleryItem({ item, getGalleryList }) {
     //1. states => conditional rendering
-    const [description, setDescription] = useState(true);
+    const [description, setDescription] = useState(true); //default true
 
     //PUT
     const addLike = () => {

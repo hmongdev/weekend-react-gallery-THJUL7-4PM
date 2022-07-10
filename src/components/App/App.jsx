@@ -7,9 +7,10 @@ import axios from 'axios';
 
 function App() {
     //states
+    //galleryList will be an array of objects
     const [galleryList, setGalleryList] = useState([]);
 
-    //useEffect
+    //useEffect => on refresh/page load run this
     useEffect(() => {
         getGalleryList();
     }, []);
