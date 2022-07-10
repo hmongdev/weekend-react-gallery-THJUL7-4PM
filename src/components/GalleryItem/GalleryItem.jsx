@@ -3,7 +3,7 @@ import axios from 'axios';
 import './GalleryItem.css';
 
 function GalleryItem({ item, getGalleryList }) {
-    //1. states
+    //1. states => conditional rendering
     const [description, setDescription] = useState(true);
 
     //PUT
