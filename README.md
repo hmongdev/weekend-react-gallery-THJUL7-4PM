@@ -1,3 +1,14 @@
+## Description
+
+_Duration: 5 hours_
+
+This weekend challenge allows you to like an image, click on the image to show its description, and create a new image.
+
+## Problems I ran into
+
+I initially approached this assignment incorrectly by moving the data.js file into the src folder since I wanted to import it.
+
+
 ## Installation
 
 1. There is no database component to base mode. All data is stored in an array on the server. Before you get started, add a few images to the `public/images` folder and modify the `server/modules/data.js` to include an `id`, `title`, `description` and `path for` each of your images. Each `id` should be a unique number (e.g. 1, 2, 3...).
