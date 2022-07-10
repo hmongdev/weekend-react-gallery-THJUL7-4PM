@@ -23,11 +23,17 @@ div section {
     margin: 1rem;
 }
 
-img {
+img,
+div.item-image {
     margin: auto;
     width: 20rem;
     height: 20rem;
     border-radius: 15%;
+}
+
+div.item-image {
+    display: flex;
+    align-items: center;
 }
 
 button {
