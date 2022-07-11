@@ -4,7 +4,7 @@ import './GalleryItem.css';
 
 function GalleryItem({ item, getGalleryList }) {
     //1. states => conditional rendering
-    const [description, setDescription] = useState(true); //default true
+    const [description, setDescription] = useState(true); //default
 
     //PUT
     const addLike = () => {
