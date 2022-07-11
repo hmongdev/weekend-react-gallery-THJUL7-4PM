@@ -35,11 +35,13 @@ function GalleryItem({ item, getGalleryList }) {
                         <p>{item.description}</p>
                     )}
                 </div>
+
                 <div className="item-text">
                     {item.likes !== 0
                         ? `${item.likes} people love this!`
                         : `Nobody likes this :(`}
                 </div>
+
                 <div className="item-button">
                     <button onClick={addLike}>👍 Like</button>
                 </div>
